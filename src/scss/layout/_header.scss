@@ -1,0 +1,13 @@
+header {
+  padding: $padding-mobile;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  max-width: 70px;
+}

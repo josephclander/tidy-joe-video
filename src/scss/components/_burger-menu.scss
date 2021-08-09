@@ -1,5 +1,5 @@
 .burger-menu {
-  width: 37px;
+  width: 50px;
   height: 100%;
   cursor: pointer;
   // reset button formatting
@@ -9,11 +9,11 @@
 
 .burger-menu span {
   display: block;
-  width: 37px;
+  width: 100%;
   height: 3px;
   background: $black;
 }
 
 .burger-menu span:nth-of-type(2) {
-  margin: 7px 0;
+  margin: 9px 0;
 }
