@@ -13,3 +13,16 @@ html {
 body {
   background-color: $grey-light;
 }
+
+.title-container {
+  display: flex;
+  align-items: flex-start;
+}
+
+.section__heading {
+  line-height: 1.2;
+}
+
+p {
+  margin-bottom: 1rem;
+}
