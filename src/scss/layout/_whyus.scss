@@ -1,0 +1,15 @@
+.whyus {
+  padding: 40px $margin-mobile;
+
+  &__section-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__image {
+    margin: 30px 0 10px;
+    width: 25%; // estimate of 87px 87px
+  }
+}
