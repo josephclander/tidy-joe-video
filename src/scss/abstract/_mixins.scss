@@ -1,0 +1,9 @@
+@mixin showreel-bg($url) {
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.7),
+      rgba(255, 255, 255, 0.7)
+    ),
+    url($url) no-repeat;
+  background-position: 220% 50%;
+  background-size: 90%;
+}

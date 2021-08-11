@@ -1,0 +1,39 @@
+.showreels {
+  padding: 20px 0;
+  background-color: $white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  &__title {
+    align-self: center;
+  }
+
+  &__container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__card {
+    padding: 70px 0;
+
+    &--play {
+      @include showreel-bg("imgs/icon-play.svg");
+    }
+
+    &--record {
+      @include showreel-bg("imgs/icon-record.svg");
+    }
+
+    &--pause {
+      @include showreel-bg("imgs/icon-pause.svg");
+    }
+  }
+
+  &__card-title {
+    margin-bottom: 20px;
+    margin-left: $margin-mobile;
+  }
+}
