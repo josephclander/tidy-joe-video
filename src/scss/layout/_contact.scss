@@ -1,0 +1,39 @@
+.contact {
+  padding: 40px 0;
+
+  &__container {
+    margin: 0 $margin-mobile;
+  }
+
+  &__disclaimer {
+    font-size: 0.8rem;
+  }
+}
+
+.form {
+  margin-top: 20px;
+
+  &__label {
+    display: block;
+  }
+
+  &__input,
+  &__textarea {
+    font-family: "Poppins", sans-serif;
+    font-size: 1rem;
+    border: 1px solid $black;
+    border-radius: 0;
+    line-height: 1.8;
+    padding: 5px;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+
+  &__submit {
+    border: 3px solid $black;
+    padding: 0.4rem 2.5rem;
+    margin-bottom: 20px;
+    font-family: "Raleway", sans-serif;
+    cursor: pointer;
+  }
+}

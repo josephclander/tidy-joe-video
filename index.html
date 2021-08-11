@@ -366,7 +366,49 @@
           </div>
         </div>
       </section>
-      <section class="contact">Contact</section>
+      <section class="contact">
+        <div class="contact__container">
+          <div class="title-container">
+            <img src="imgs/icon-play.svg" alt="" class="play icon" />
+            <h2 class="section__heading">Contact</h2>
+          </div>
+          <form class="form" action="">
+            <label class="form__label" for="firstname">First Name</label>
+            <input
+              class="form__input"
+              type="text"
+              id="firstname"
+              name="firstname"
+            />
+            <label class="form__label" for="lastname">Last Name</label>
+            <input
+              class="form__input"
+              type="text"
+              id="lastname"
+              name="lastname"
+            />
+            <label class="form__label" for="email">Email</label>
+            <input class="form__input" type="email" id="email" name="email" />
+            <label class="form__label" for="projectdetails"
+              >Project Details</label
+            >
+            <textarea
+              class="form__textarea"
+              name="projectdetails"
+              id="projectdetails"
+              cols="30"
+              rows="10"
+            ></textarea>
+            <input class="form__submit" type="submit" value="SEND" />
+          </form>
+          <div class="contact__disclaimer">
+            <p>
+              <strong>NOTE:</strong> This will use a GOTCHA screen for safety,
+              because remember, not everybody is as nice as you :-)
+            </p>
+          </div>
+        </div>
+      </section>
     </main>
     <footer>Footer</footer>
   </body>
