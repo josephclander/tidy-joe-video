@@ -11,7 +11,7 @@
             <mask id="mask-2" fill="white">
                 <use xlink:href="#path-1"></use>
             </mask>
-            <use id="Rectangle" fill="#4564B0" xlink:href="#path-1"></use>
+            <use id="Rectangle" fill="#FFC651" xlink:href="#path-1"></use>
         </g>
     </g>
 </svg>
