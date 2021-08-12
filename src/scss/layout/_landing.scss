@@ -4,14 +4,14 @@
 
   &__container {
     width: 100%;
+    max-width: $breakpoint-desktop;
     display: flex;
     flex-direction: column;
-    height: 85vh;
-    max-height: 500px;
     justify-content: space-between;
+    margin: 0 auto;
   }
 
-  &__header {
+  &__headline {
     line-height: 1.2;
     margin-bottom: 8px;
 
@@ -29,8 +29,7 @@
   &__image-outlinebox {
     align-self: flex-end;
     justify-self: flex-end;
-    // max-width: 320px;
-    width: 90vw;
+    width: min(90vw, 800px);
     outline: 5px solid $black;
     transform: translate(8%, 0%) scale(0.8);
   }
