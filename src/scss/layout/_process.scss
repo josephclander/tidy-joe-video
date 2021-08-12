@@ -2,12 +2,12 @@
   padding: 40px 0;
 
   &__title {
-    margin: 0 $margin-mobile 30px;
+    margin: 0 $gap-mobile 30px;
   }
 
   &__card {
     background: $white;
-    padding: 20px $margin-mobile;
+    padding: 20px $gap-mobile;
     margin-bottom: 20px;
   }
 
