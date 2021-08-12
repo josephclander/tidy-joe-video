@@ -1,5 +1,9 @@
 html {
   font-size: 100%;
+
+  @media screen and (min-width: $breakpoint-tablet) {
+    font-size: 125%;
+  }
 }
 
 body {

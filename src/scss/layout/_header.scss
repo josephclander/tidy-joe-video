@@ -1,5 +1,10 @@
 header {
   margin: $gap-mobile $gap-mobile;
+  max-width: $breakpoint-desktop;
+
+  @media screen and (min-width: $breakpoint-desktop) {
+    margin: $gap-mobile auto;
+  }
 }
 
 nav {
@@ -10,4 +15,36 @@ nav {
 
 .logo {
   max-width: 70px;
+}
+
+.burger-menu {
+  @media screen and (min-width: $breakpoint-tablet) {
+    display: none;
+  }
+}
+
+.whitebar {
+  display: none;
+  flex: 1;
+  background: $white;
+  margin-left: 20px;
+  padding-right: 10px;
+  @media screen and (min-width: $breakpoint-tablet) {
+    display: block;
+  }
+}
+
+.navbar {
+  display: flex;
+  justify-content: flex-end;
+  list-style-type: none;
+  font-size: 0.8rem;
+
+  & li {
+    margin: 6px 0 6px 32px;
+
+    & a:hover {
+      color: $green;
+    }
+  }
 }
