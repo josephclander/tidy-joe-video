@@ -1,14 +1,25 @@
 .process {
   padding: 40px 0;
 
+  &__container {
+    margin: 0 auto;
+    max-width: $breakpoint-desktop;
+  }
+
   &__title {
-    margin: 0 $gap-mobile 30px;
+    margin: 30px $gap-mobile 50px;
+    @media screen and (min-width: $breakpoint-tablet) {
+      margin: 40px $gap-tablet 60px;
+    }
   }
 
   &__card {
     background: $white;
     padding: 20px $gap-mobile;
     margin-bottom: 20px;
+    @media screen and (min-width: $breakpoint-mobile) {
+      margin: 0 $gap-tablet 20px;
+    }
   }
 
   &__subheading {
