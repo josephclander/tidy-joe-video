@@ -1,19 +1,67 @@
 .services {
   background-color: $white;
   padding: 40px 0 60px;
+  max-width: $breakpoint-desktop;
+  margin: 0 auto;
+  @media screen and (min-width: $breakpoint-mobile) {
+    background: url(imgs/icon-forward-bg.svg) center top,
+      linear-gradient(rgba($white, 1), rgba($white, 1));
+    background-size: 340px;
+  }
 
   &__container {
     padding: 0 $gap-mobile;
+    @media screen and (min-width: $breakpoint-tablet) {
+      padding: 0 $gap-tablet;
+    }
+  }
+
+  &__intro-container {
+    display: flex;
+    flex-direction: column;
+
+    @media screen and (min-width: $breakpoint-tablet) {
+      flex-direction: row;
+      margin: 20px 0 40px;
+    }
   }
 
   &__title {
     margin-bottom: 20px;
+    @media screen and (min-width: $breakpoint-tablet) {
+      padding-right: 30px;
+    }
+  }
+
+  &__intro-text {
+    max-width: $breakpoint-mobile;
+    @media screen and (min-width: $breakpoint-tablet) {
+      padding-left: 30px;
+      border-left: 5px solid $black;
+
+      & p {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &__cards-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
   }
 
   &__card {
+    background: $white;
     box-shadow: 0 2px 8px rgba($black, 0.1);
     padding-top: 20px;
     margin-bottom: 30px;
+    max-width: 300px;
+    @media screen and (min-width: $breakpoint-mobile) {
+      margin: 0 20px 30px;
+    }
   }
 
   &__image-container {
