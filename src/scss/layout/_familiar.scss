@@ -1,9 +1,18 @@
 .familiar {
   background: $white;
+  margin: 0 auto;
   padding: 40px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: $breakpoint-desktop;
 
   &__container {
     margin: 0 $gap-mobile;
+
+    @media screen and (min-width: $breakpoint-tablet) {
+      margin: 0 $gap-tablet;
+    }
   }
 
   &__section-container {
@@ -14,16 +23,35 @@
     margin-top: 20px;
   }
 
+  &__image_and_text {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    @media screen and (min-width: $breakpoint-tablet) {
+      flex-wrap: nowrap;
+      align-items: center;
+    }
+  }
+
   &__image-container {
     border: 5px solid $black;
     margin: 30px;
     display: flex;
     justify-content: center;
+    max-width: 384px;
+
+    @media screen and (min-width: $breakpoint-tablet) {
+      flex: 1;
+      max-width: 100%;
+    }
   }
 
   &__image {
     display: flex;
     width: 65%;
+    height: auto;
     border: 5px solid;
     transform: scale(0.85);
 
@@ -41,6 +69,20 @@
 
     &:nth-of-type(2) {
       transform: translate(-13%, 13%);
+    }
+  }
+
+  &__text {
+    max-width: $breakpoint-mobile;
+
+    @media screen and (min-width: $breakpoint-tablet) {
+      flex: 1;
+      max-width: 100%;
+      padding: 0 10px;
+
+      & p:last-of-type {
+        margin-bottom: 0;
+      }
     }
   }
 }

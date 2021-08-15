@@ -1,15 +1,19 @@
 .landing {
-  padding: 40px $gap-mobile 0;
   overflow: hidden;
+  margin: 0 auto;
+  max-width: $breakpoint-desktop;
 
   &__container {
     width: 100%;
-    max-width: $breakpoint-desktop;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin: 0 auto;
     overflow: hidden;
+    padding: 40px $gap-mobile 0;
+
+    @media screen and (min-width: $breakpoint-tablet) {
+      margin: 40px $gap-tablet 0;
+    }
   }
 
   &__headline {
