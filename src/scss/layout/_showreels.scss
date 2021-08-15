@@ -4,7 +4,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  max-width: $breakpoint-desktop;
+  margin: 0 auto;
 
   &__title {
     align-self: center;
@@ -12,23 +13,34 @@
 
   &__container {
     width: 100%;
+    max-width: $breakpoint-tablet;
     display: flex;
     flex-direction: column;
   }
 
   &__card {
     padding: 70px 0;
+    width: 100%;
 
     &--play {
-      @include showreel-bg("imgs/icon-play.svg");
+      @include showreel-bg("imgs/icon-play.svg", 220% 50%, 90%);
+      @media screen and (min-width: $breakpoint-mobile) {
+        @include showreel-bg("imgs/icon-play.svg", 90% 70%, 70%);
+      }
     }
 
     &--record {
-      @include showreel-bg("imgs/icon-record.svg");
+      @include showreel-bg("imgs/icon-record.svg", 220% 50%, 90%);
+      @media screen and (min-width: $breakpoint-mobile) {
+        @include showreel-bg("imgs/icon-record.svg", 90% 70%, 70%);
+      }
     }
 
     &--pause {
-      @include showreel-bg("imgs/icon-pause.svg");
+      @include showreel-bg("imgs/icon-pause.svg", 220% 50%, 90%);
+      @media screen and (min-width: $breakpoint-mobile) {
+        @include showreel-bg("imgs/icon-pause.svg", 90% 70%, 70%);
+      }
     }
   }
 
