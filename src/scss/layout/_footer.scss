@@ -1,12 +1,19 @@
 .footer {
   background: $black;
   color: $white;
-  display: flex;
-  flex-direction: column;
   padding-bottom: 40px;
 
   &__container {
-    margin: 0 $gap-mobile;
+    display: flex;
+    flex-direction: column;
+    max-width: $breakpoint-desktop;
+    margin: 0 auto;
+    padding: 0 $gap-mobile;
+    @media screen and (min-width: $breakpoint-tablet) {
+      padding: 40px $gap-tablet 0;
+      flex-direction: row;
+      justify-content: space-around;
+    }
   }
 
   &__image-container {
@@ -17,19 +24,28 @@
 
   &__image {
     width: 35vw;
+    max-width: 195px;
   }
 }
 
 .list {
   font-family: "Raleway", sans-serif;
+  display: flex;
+  flex-direction: column;
 
   & li > a:hover {
     color: $green;
   }
 
+  &__main,
+  &__sub {
+    list-style-type: none;
+  }
+
   &__main {
     font-size: 1.875rem;
     margin-bottom: 1rem;
+    flex: 1;
   }
 
   &__sub {
