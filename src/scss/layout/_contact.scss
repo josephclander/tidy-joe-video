@@ -51,5 +51,10 @@
     margin-bottom: 20px;
     font-family: "Raleway", sans-serif;
     cursor: pointer;
+    transition: 0.3s;
+
+    &:hover {
+      color: $green;
+    }
   }
 }
