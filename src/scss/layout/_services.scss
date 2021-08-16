@@ -28,6 +28,10 @@
 
   &__title {
     margin-bottom: 20px;
+  }
+
+  &__main-title {
+    margin-bottom: 20px;
     @media screen and (min-width: $breakpoint-tablet) {
       padding-right: 30px;
     }
