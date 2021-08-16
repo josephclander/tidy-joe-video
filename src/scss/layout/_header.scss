@@ -42,10 +42,14 @@ nav {
   font-size: 0.8rem;
 
   & li {
-    margin: 6px 0 6px 32px;
+    margin: 0 0 0 32px;
 
-    & a:hover {
-      color: $green;
+    & a {
+      padding: 4px 20px;
+
+      &:hover {
+        color: $green;
+      }
     }
   }
 }
