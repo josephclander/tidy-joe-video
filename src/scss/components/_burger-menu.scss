@@ -1,6 +1,5 @@
 .burger-menu {
   display: block;
-  // text-decoration: none;
   width: 50px;
   height: 100%;
   cursor: pointer;
@@ -10,10 +9,6 @@
 
   @media screen and (min-width: $breakpoint-tablet) {
     display: none;
-  }
-
-  &:focus-within .overlay {
-    transform: translateX(0%);
   }
 
   & span {
