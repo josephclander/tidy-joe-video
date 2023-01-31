@@ -1,45 +1,41 @@
-const path = require("path");
-const HtmlWebpackPlugin = require("html-webpack-plugin");
-const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-const CopyWebpackPlugin = require("copy-webpack-plugin");
+const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 const mode =
-  process.env.NODE_ENV === "production" ? "production" : "development";
+  process.env.NODE_ENV === 'production' ? 'production' : 'development';
 
 module.exports = {
   mode,
-  entry: "./src/index.js",
+  entry: './src/index.js',
   plugins: [
     new HtmlWebpackPlugin({
-      template: "./index.html",
-      filename: "index.html",
-    }),
-    new HtmlWebpackPlugin({
-      template: "./about.html",
-      filename: "about.html",
+      template: './index.html',
+      filename: 'index.html',
     }),
     new MiniCssExtractPlugin({
-      filename: "[contenthash].css",
+      filename: '[contenthash].css',
     }),
     new CopyWebpackPlugin({
       patterns: [
         {
-          from: "src/imgs",
-          to: "imgs",
+          from: 'src/imgs',
+          to: 'imgs',
         },
-        { from: "site.webmanifest", to: "." },
+        { from: 'site.webmanifest', to: '.' },
       ],
     }),
   ],
-  devtool: mode === "production" ? false : "cheap-source-map",
+  devtool: mode === 'production' ? false : 'cheap-source-map',
   devServer: {
-    contentBase: "./dist",
+    static: './dist',
     port: 3000,
-    open: "Google Chrome",
+    open: true,
   },
   output: {
-    filename: "[name].[contenthash].js",
-    path: path.resolve(__dirname, "dist"),
+    filename: '[name].[contenthash].js',
+    path: path.resolve(__dirname, 'dist'),
     clean: true,
   },
   module: {
@@ -48,9 +44,9 @@ module.exports = {
         test: /\.js$/,
         exclude: /node_modules/,
         use: {
-          loader: "babel-loader",
+          loader: 'babel-loader',
           options: {
-            presets: ["@babel/preset-env"],
+            presets: ['@babel/preset-env'],
           },
         },
       },
@@ -59,12 +55,12 @@ module.exports = {
         use: [
           MiniCssExtractPlugin.loader,
           {
-            loader: "css-loader",
-            options: { sourceMap: mode === "development" },
+            loader: 'css-loader',
+            options: { sourceMap: mode === 'development' },
           },
           {
-            loader: "sass-loader",
-            options: { sourceMap: mode === "development" },
+            loader: 'sass-loader',
+            options: { sourceMap: mode === 'development' },
           },
         ],
       },
