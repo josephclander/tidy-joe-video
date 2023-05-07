@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 400 400" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <path d="M59.5,58.5 L200,199.498 L200,59 L341,200.5 L200,342 L200,200.502 L59.5,341.5 L59.5,58.5 Z" id="path-1"></path>
+    </defs>
+    <g id="Forward" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <mask id="mask-2" fill="transparent">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <use id="Combined-Shape" fill-opacity="0.3" fill="#EAEAEA" xlink:href="#path-1"></use>
+        <g id="color-/-grey" mask="url(#mask-2)" fill="#EAEAEA">
+            <rect id="Rectangle" x="0" y="0" width="400" height="400"></rect>
+        </g>
+    </g>
+</svg>
