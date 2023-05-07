@@ -1,0 +1,1 @@
+(()=>{"use strict";var e=document.querySelector(".burger-menu"),t=document.querySelector(".overlay");e.addEventListener("click",(function(){t.classList.remove("hide")})),t.addEventListener("click",(function(){t.classList.add("hide")}))})();

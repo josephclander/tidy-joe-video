@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="282px" height="282px" viewBox="0 0 282 282" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <path d="M159,59 L159,341 L59,341 L59,59 L159,59 Z M341,59 L341,341 L241,341 L241,59 L341,59 Z" id="path-1"></path>
+    </defs>
+    <g id="Icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Icon-/-Pause-Copy" transform="translate(-59.000000, -59.000000)">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <use id="Combined-Shape" fill="#FFC651" xlink:href="#path-1"></use>
+        </g>
+    </g>
+</svg>
